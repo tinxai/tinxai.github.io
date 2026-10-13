@@ -428,9 +428,9 @@ a.skill-tag-link:hover,
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 20%;
-  transform: scale(1.8);
-  transform-origin: center 25%;
+  object-position: center center;
+  transform: scale(1.2);
+  transform-origin: center center;
   transition: transform var(--transition);
 }
 
