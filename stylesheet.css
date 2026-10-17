@@ -249,6 +249,11 @@ a.skill-tag-link:hover,
   position: relative;
 }
 
+.skill-tooltip-anchor--kitten:hover,
+.skill-tooltip-anchor--kitten:focus-visible {
+  z-index: 30;
+}
+
 .skill-tooltip-anchor--kitten .skill-tooltip {
   position: absolute;
   top: -1px;
