@@ -29,6 +29,7 @@
 
     </div>
 
+    <script src="project-icons.js"></script>
     <script src="script.js"></script>
     <script>
         const linkIcons = {
@@ -55,6 +56,7 @@
                 const grid = document.getElementById('projects-grid');
                 grid.innerHTML = projects.map(p => {
                     const tags = p.tags.map(t => `<span class="project-tag">${t}</span>`).join('');
+                    const stack = (p.techStack || []).map(t => `<span class="project-tag">${t}</span>`).join('');
                     const links = Object.entries(p.links || {}).map(([type, url]) =>
                         `<a href="${url}" class="project-link" target="_blank" rel="noopener">
                             ${linkIcons[type] || '<i class="fas fa-link"></i>'}
@@ -69,15 +71,17 @@
                     ).join('');
                     return `
                         <div class="project-card">
-                            <div class="project-icon">${p.icon}</div>
+                            ${p.banner ? `<img class="project-banner" src="${p.banner}" alt="${p.bannerAlt || p.title}" loading="lazy">` : p.icon ? `<div class="project-icon" aria-hidden="true">${p.icon}</div>` : ''}
                             <div class="project-content">
                                 <h2 class="project-title">${p.title}</h2>
                                 <p class="project-desc">${p.description}</p>
                                 <div class="project-tags">${tags}</div>
+                                ${stack ? `<p class="project-stack-label">Tech stack</p><div class="project-tags">${stack}</div>` : ''}
                                 <div class="project-links">${links}${materials}</div>
                             </div>
                         </div>`;
                 }).join('');
+                addProjectStackIcons(grid);
             })
             .catch(err => console.error('Failed to load projects:', err));
     </script>

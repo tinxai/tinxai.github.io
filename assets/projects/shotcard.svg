@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#17151c"/>
+      <stop offset="1" stop-color="#231a22"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff4d5e"/>
+      <stop offset="1" stop-color="#c8102e"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+    <pattern id="seigaiha" width="48" height="24" patternUnits="userSpaceOnUse">
+      <g fill="none" stroke="#ffffff" stroke-opacity="0.035" stroke-width="1.5">
+        <circle cx="24" cy="24" r="22"/><circle cx="24" cy="24" r="15"/><circle cx="24" cy="24" r="8"/>
+        <circle cx="0" cy="12" r="22"/><circle cx="48" cy="12" r="22"/>
+      </g>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="420" fill="url(#bg)"/>
+  <rect width="1280" height="420" fill="url(#seigaiha)"/>
+  <circle cx="1175" cy="55" r="115" fill="url(#sun)" opacity="0.8"/>
+
+  <!-- Title -->
+  <g font-family="-apple-system, 'SF Pro Display', 'Segoe UI', Helvetica, Arial, sans-serif">
+    <text x="72" y="150" font-size="84" font-weight="800" fill="#f5f2ec" letter-spacing="-2">Shotcard</text>
+    <text x="76" y="196" font-size="23" fill="#bdb6ad">Screenshot any Japanese → instant explanation</text>
+    <text x="76" y="232" font-size="23" fill="#bdb6ad">→ Anki flashcard you'll actually remember.</text>
+    <g font-size="20" font-weight="600">
+      <rect x="76" y="270" width="104" height="44" rx="10" fill="#2e2830" stroke="#4a4048"/>
+      <text x="128" y="299" text-anchor="middle" fill="#f5f2ec">⌘ ⇧ J</text>
+      <text x="196" y="299" fill="#8d857d" font-weight="400">drag a box. that's it.</text>
+    </g>
+    <g font-size="16" fill="#8d857d">
+      <text x="76" y="370">macOS · Hammerspoon · OpenRouter · Anki (FSRS) · Obsidian</text>
+    </g>
+  </g>
+
+  <!-- Screenshot selection -->
+  <g font-family="'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', 'Yu Gothic', sans-serif">
+    <rect x="700" y="120" width="240" height="120" rx="6" fill="#ffffff" fill-opacity="0.04"
+          stroke="#f5f2ec" stroke-width="2" stroke-dasharray="9 7"/>
+    <g fill="#f5f2ec">
+      <circle cx="700" cy="120" r="5"/><circle cx="940" cy="120" r="5"/>
+      <circle cx="700" cy="240" r="5"/><circle cx="940" cy="240" r="5"/>
+    </g>
+    <text x="737" y="170" text-anchor="middle" font-size="16" fill="#ff8a95">た</text>
+    <text x="820" y="206" text-anchor="middle" font-size="34" font-weight="700" fill="#f5f2ec">食べちゃった</text>
+    <text x="820" y="232" text-anchor="middle" font-size="14" fill="#8d857d">ごめん、ケーキ全部…</text>
+
+    <!-- arrow -->
+    <path d="M 850 250 C 870 315, 910 332, 952 322" fill="none" stroke="#ff4d5e" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 940 311 L 955 321 L 940 333" fill="none" stroke="#ff4d5e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Flashcard -->
+    <g filter="url(#shadow)" transform="rotate(-4 1105 275)">
+      <rect x="965" y="185" width="280" height="190" rx="16" fill="#fbfaf7"/>
+      <text x="1105" y="231" text-anchor="middle" font-size="15" fill="#6e6e73">〜ちゃう  ·  N4  ·  casual</text>
+      <text x="1105" y="287" text-anchor="middle" font-size="46" font-weight="700" fill="#1d1d1f">〜てしまう</text>
+      <line x1="1005" y1="307" x2="1205" y2="307" stroke="#e5e2dc" stroke-width="2"/>
+      <text x="1105" y="341" text-anchor="middle" font-size="19" fill="#c8102e"
+            font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif">end up doing / completely</text>
+    </g>
+  </g>
+</svg>

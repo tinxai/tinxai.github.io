@@ -1,5 +1,145 @@
 [
     {
+        "slug": "pageguide-gemini",
+        "title": "PageGuide Gemini",
+        "description": "A Chrome extension that connects Gemini citations to evidence on the page. Jump to an existing source tab, highlight quoted text, or draw labeled boxes over images and charts.",
+        "tags": [
+            "Browser Extension",
+            "AI"
+        ],
+        "techStack": [
+            "JavaScript",
+            "Chrome Extensions",
+            "Gemini",
+            "HTML / CSS"
+        ],
+        "links": {
+            "github": "https://github.com/tinxai/pageguide-gemini"
+        },
+        "banner": "assets/projects/pageguide-gemini.png",
+        "bannerAlt": "PageGuide Gemini highlighting cited evidence alongside a Gemini answer"
+    },
+    {
+        "slug": "phongkham-ai",
+        "title": "PhongKham AI",
+        "icon": "🏥",
+        "description": "A Vietnamese clinic assistant for booking and canceling appointments, answering clinic FAQs, and exploring synthetic clinic data with a pandas-based analytics agent.",
+        "tags": [
+            "Clinic Assistant",
+            "AI"
+        ],
+        "techStack": [
+            "Python",
+            "FastAPI",
+            "SQLite",
+            "Qwen",
+            "Tinker API",
+            "pandas"
+        ],
+        "links": {
+            "github": "https://github.com/tinxai/phongkham-ai"
+        },
+        "banner": "assets/projects/phongkham-ai.webp",
+        "bannerAlt": "Clinic booking, medical chat, and appointment calendar illustration"
+    },
+    {
+        "slug": "dealmesh",
+        "title": "DealMesh",
+        "icon": "🛒",
+        "description": "A shopping-list optimizer that compares combinations of products, sellers, shipping costs, and bundle discounts across marketplaces, with an explanation for each choice.",
+        "tags": [
+            "E-commerce",
+            "Optimization"
+        ],
+        "techStack": [
+            "Java",
+            "Spring Boot",
+            "React",
+            "TypeScript",
+            "Vite",
+            "Tailwind CSS",
+            "PostgreSQL",
+            "Redis"
+        ],
+        "links": {},
+        "banner": "assets/projects/dealmesh-v2.webp",
+        "bannerAlt": "DealMesh ecommerce concept with product cards and an optimizer comparing seller bundles, shipping costs, and savings"
+    },
+    {
+        "slug": "muselive",
+        "title": "MuseLive",
+        "icon": "📺",
+        "description": "A live educational streaming platform where teachers broadcast lessons and viewers join live chat and quizzes, follow creators, and discover new streams.",
+        "tags": [
+            "Live Streaming",
+            "Education"
+        ],
+        "techStack": [
+            "Java",
+            "Spring Boot",
+            "Next.js",
+            "React",
+            "TypeScript",
+            "Tailwind CSS",
+            "PostgreSQL",
+            "Redis",
+            "LiveKit",
+            "WebSocket / STOMP"
+        ],
+        "links": {},
+        "banner": "assets/projects/muselive-v2.webp",
+        "bannerAlt": "MuseLive streaming website concept with a live lesson, interactive quiz, lesson chat, and teacher discovery"
+    },
+    {
+        "slug": "paper-tinder",
+        "title": "PaperSwipe",
+        "icon": "📄",
+        "description": "A mobile app for discovering academic papers matched to your research interests. Swipe to save or dismiss papers, then search and filter your saved reading list.",
+        "tags": [
+            "Research",
+            "Mobile App"
+        ],
+        "techStack": [
+            "React Native",
+            "Expo",
+            "TypeScript",
+            "Python",
+            "FastAPI",
+            "PostgreSQL",
+            "SQLAlchemy",
+            "TanStack Query",
+            "Semantic Scholar API"
+        ],
+        "links": {
+            "github": "https://github.com/tinxai/paper_tinder"
+        },
+        "banner": "assets/projects/paper-tinder.webp",
+        "bannerAlt": "Academic paper discovery and swipe cards illustration"
+    },
+    {
+        "slug": "shotcard",
+        "title": "Shotcard",
+        "icon": "📸",
+        "description": "A macOS tool that turns screenshots of Japanese text or images into level-aware explanations and Anki flashcards, with furigana, audio, and optional Obsidian notes.",
+        "tags": [
+            "Language Learning",
+            "Desktop Tool"
+        ],
+        "techStack": [
+            "Python",
+            "Lua",
+            "Hammerspoon",
+            "OpenRouter",
+            "AnkiConnect",
+            "HTML / CSS"
+        ],
+        "links": {
+            "github": "https://github.com/tinxai/shotcard"
+        },
+        "banner": "assets/projects/shotcard.svg",
+        "bannerAlt": "Shotcard screenshot-to-Anki workflow banner"
+    },
+    {
         "slug": "hot",
         "title": "HoT: Highlighted Chain of Thought",
         "description": "A method for referencing supporting facts from inputs by highlighting evidence directly in the source text.",
