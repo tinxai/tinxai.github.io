@@ -91,32 +91,6 @@
         "bannerAlt": "MuseLive streaming website concept with a live lesson, interactive quiz, lesson chat, and teacher discovery"
     },
     {
-        "slug": "paper-tinder",
-        "title": "PaperSwipe",
-        "icon": "📄",
-        "description": "A mobile app for discovering academic papers matched to your research interests. Swipe to save or dismiss papers, then search and filter your saved reading list.",
-        "tags": [
-            "Research",
-            "Mobile App"
-        ],
-        "techStack": [
-            "React Native",
-            "Expo",
-            "TypeScript",
-            "Python",
-            "FastAPI",
-            "PostgreSQL",
-            "SQLAlchemy",
-            "TanStack Query",
-            "Semantic Scholar API"
-        ],
-        "links": {
-            "github": "https://github.com/tinxai/paper_tinder"
-        },
-        "banner": "assets/projects/paper-tinder.webp",
-        "bannerAlt": "Academic paper discovery and swipe cards illustration"
-    },
-    {
         "slug": "shotcard",
         "title": "Shotcard",
         "icon": "📸",
