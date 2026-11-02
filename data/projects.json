@@ -66,31 +66,6 @@
         "bannerAlt": "DealMesh ecommerce concept with product cards and an optimizer comparing seller bundles, shipping costs, and savings"
     },
     {
-        "slug": "muselive",
-        "title": "MuseLive",
-        "icon": "📺",
-        "description": "A live educational streaming platform where teachers broadcast lessons and viewers join live chat and quizzes, follow creators, and discover new streams.",
-        "tags": [
-            "Live Streaming",
-            "Education"
-        ],
-        "techStack": [
-            "Java",
-            "Spring Boot",
-            "Next.js",
-            "React",
-            "TypeScript",
-            "Tailwind CSS",
-            "PostgreSQL",
-            "Redis",
-            "LiveKit",
-            "WebSocket / STOMP"
-        ],
-        "links": {},
-        "banner": "assets/projects/muselive-v2.webp",
-        "bannerAlt": "MuseLive streaming website concept with a live lesson, interactive quiz, lesson chat, and teacher discovery"
-    },
-    {
         "slug": "shotcard",
         "title": "Shotcard",
         "icon": "📸",
