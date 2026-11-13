@@ -740,58 +740,85 @@ a.skill-tag-link:hover,
   background: var(--resume-warm);
 }
 
-/* ---------- Timeline (Education) ---------- */
+/* ---------- Education ---------- */
+.page-view[data-page="education"] {
+  font-family: var(--font-main);
+}
+
+.page-view[data-page="education"] .section-title {
+  color: var(--color-heading);
+}
+
+.page-view[data-page="education"] .section-title::after {
+  display: none;
+}
+
 .timeline {
   max-width: 760px;
 }
 
 .timeline-item {
   display: grid;
-  grid-template-columns: 14px 1fr;
-  gap: 18px;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 22px;
+  padding: 24px 0;
 }
 
-.timeline-rail {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 8px;
+.timeline-item + .timeline-item {
+  border-top: 1px solid var(--color-border);
 }
 
-.timeline-dot {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--resume-accent);
-  border: 3px solid var(--resume-soft);
-  box-shadow: 0 0 0 1px rgba(47, 125, 109, 0.22);
-  flex-shrink: 0;
+.timeline-item:first-child {
+  padding-top: 4px;
 }
 
-.timeline-line {
-  width: 2px;
-  flex: 1;
-  min-height: 28px;
-  background: #d9e5df;
-  margin-top: 6px;
+.education-logo,
+.experience-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-top: 2px;
 }
 
 .timeline-info {
-  padding-bottom: 24px;
+  min-width: 0;
+}
+
+.education-heading,
+.experience-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+
+.education-dates,
+.entry-dates {
+  color: var(--color-text-muted);
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 .timeline-org {
   font-size: 17px;
   font-weight: 700;
-  color: var(--resume-ink);
+  color: var(--color-heading);
   line-height: 1.28;
+  text-decoration: none;
+}
+
+.timeline-org:hover,
+.timeline-org:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .timeline-role {
   font-size: 14.5px;
   font-style: normal;
-  font-weight: 600;
-  color: var(--resume-accent-deep);
+  font-weight: 500;
+  color: var(--color-text);
   margin-top: 4px;
   line-height: 1.38;
 }
@@ -799,8 +826,8 @@ a.skill-tag-link:hover,
 .timeline-meta {
   font-size: 13px;
   font-style: normal;
-  font-weight: 600;
-  color: var(--resume-warm);
+  font-weight: 400;
+  color: var(--color-text-muted);
   margin-top: 4px;
 }
 
@@ -813,18 +840,37 @@ a.skill-tag-link:hover,
 
 .timeline-advisor {
   font-size: 13px;
-  color: #7c6154;
+  color: var(--color-text-muted);
 }
 
 .timeline-advisor a {
   color: inherit;
-  border-bottom: 1px solid rgba(124, 97, 84, 0.35);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .timeline-advisor a:hover,
 .timeline-advisor a:focus {
-  color: var(--resume-warm);
+  color: var(--color-accent);
   border-bottom-color: currentColor;
+}
+
+@media (max-width: 600px) {
+  .timeline-item {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .education-logo,
+  .experience-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .education-heading,
+  .experience-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* ---------- Entry list (Experience / Honors & Awards) ---------- */
@@ -921,6 +967,77 @@ a.skill-tag-link:hover,
 
 .entry-bullets li + li {
   margin-top: 3px;
+}
+
+.page-view[data-page="experience"] {
+  font-family: var(--font-main);
+}
+
+.page-view[data-page="experience"] .section-title {
+  color: var(--color-heading);
+}
+
+.page-view[data-page="experience"] .section-title::after {
+  display: none;
+}
+
+.page-view[data-page="experience"] .entry-list {
+  gap: 0;
+}
+
+.page-view[data-page="experience"] .entry-card {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 22px;
+  padding: 24px 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.page-view[data-page="experience"] .entry-card:first-child {
+  padding-top: 4px;
+}
+
+.page-view[data-page="experience"] .entry-card + .entry-card {
+  border-top: 1px solid var(--color-border);
+}
+
+.experience-info {
+  min-width: 0;
+}
+
+.experience-logo--aioz {
+  filter: brightness(0);
+}
+
+.page-view[data-page="experience"] .entry-org {
+  color: var(--color-heading);
+  text-decoration: none;
+}
+
+.page-view[data-page="experience"] .entry-org:hover,
+.page-view[data-page="experience"] .entry-org:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.page-view[data-page="experience"] .entry-role {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.page-view[data-page="experience"] .entry-meta {
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+@media (max-width: 600px) {
+  .page-view[data-page="experience"] .entry-card {
+    grid-template-columns: 44px minmax(0, 1fr);
+    gap: 14px;
+  }
 }
 
 .page-view[data-page="skills"] .skill-group {
