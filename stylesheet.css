@@ -957,6 +957,155 @@ a.skill-tag-link:hover,
   border: 1px solid #e5c7b2;
 }
 
+/* ---------- Honors & Awards timeline ---------- */
+.page-view[data-page="honors"] {
+  font-family: var(--font-main);
+}
+
+.page-view[data-page="honors"] .section-title {
+  color: var(--color-heading);
+}
+
+.page-view[data-page="honors"] .section-title::after {
+  display: none;
+}
+
+.awards-timeline {
+  max-width: 760px;
+}
+
+.award-year-group {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 18px;
+}
+
+.award-year {
+  padding-top: 2px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--color-heading);
+  line-height: 1.3;
+}
+
+.award-events {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 36px 28px;
+  border-left: 1px solid #cbd5e1;
+}
+
+.award-year-group:last-child .award-events {
+  padding-bottom: 0;
+}
+
+.award-event {
+  position: relative;
+  padding: 0 0 26px;
+}
+
+.award-event:last-child {
+  padding-bottom: 0;
+}
+
+.award-event::before {
+  content: "";
+  position: absolute;
+  left: -33px;
+  top: 6px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 5px var(--color-bg);
+}
+
+.award-event--featured::before {
+  background: #ba7428;
+}
+
+.award-event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 12px;
+  align-items: baseline;
+  margin-bottom: 6px;
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+
+.award-kind {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.award-event-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 12px;
+}
+
+.award-title {
+  font-size: 17px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--color-heading);
+}
+
+.award-value {
+  padding: 2px 8px;
+  border: 1px solid #e8cfaa;
+  border-radius: 4px;
+  background: #fbf1df;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #80541e;
+  white-space: nowrap;
+}
+
+.award-description {
+  margin-top: 7px;
+  font-size: 13.5px;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+  overflow-wrap: anywhere;
+}
+
+.awards-timeline .award-photo-link {
+  margin-top: 16px;
+  max-width: 440px;
+}
+
+.awards-timeline .award-photo {
+  border-color: var(--color-border);
+}
+
+@media (max-width: 600px) {
+  .award-year-group {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .award-year {
+    font-size: 18px;
+  }
+
+  .award-events {
+    padding-left: 20px;
+  }
+
+  .award-event::before {
+    left: -25px;
+  }
+
+  .award-title {
+    font-size: 16px;
+  }
+}
+
 .entry-bullets {
   margin: 6px 0 0;
   padding-left: 18px;
