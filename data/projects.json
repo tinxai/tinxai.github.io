@@ -1,30 +1,5 @@
 [
   {
-    "slug": "dealmesh",
-    "title": "DealMesh",
-    "description": "Finding the cheapest item does not always make the cheapest shopping list. DealMesh compares products, sellers, shipping, and bundle discounts to choose a combination for the whole list.",
-    "techStack": [
-      "Java",
-      "Spring Boot",
-      "React",
-      "TypeScript",
-      "Vite",
-      "Tailwind CSS",
-      "PostgreSQL",
-      "Redis"
-    ],
-    "links": {},
-    "group": "software",
-    "detail": "The optimizer explains each choice and flags unknown shipping costs. Built-in demo marketplaces let the workflow run without marketplace credentials.",
-    "teaser": {
-      "src": "assets/projects/dealmesh-groceries.png",
-      "alt": "DealMesh grocery-list interface with real rice, noodle, fish sauce, and coffee photos, alongside a simulated seller-bundle comparison",
-      "caption": "UI concept · Product photos from Weee",
-      "width": 2880,
-      "height": 1516
-    }
-  },
-  {
     "slug": "maicare",
     "title": "MaiCare",
     "description": "An AI front desk for clinics, helping patients book, reschedule, or cancel visits in English and Vietnamese.",
