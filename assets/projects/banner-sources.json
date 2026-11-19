@@ -17,5 +17,22 @@
     "https://github.com/livekit",
     "https://github.com/thinking-machines-lab",
     "https://github.com/Hammerspoon"
-  ]
+  ],
+  "authored": {
+    "dealmesh-groceries.png": {
+      "method": "HTML/CSS browser render; no generated artwork",
+      "source": "dealmesh-reference/figure.html",
+      "productAttribution": "dealmesh-reference/sources.json",
+      "reference": "https://www.weee.com/en",
+      "note": "Simulated seller groups, prices, delivery, and discounts; no claim of a Weee integration."
+    }
+  },
+  "screenshots": {
+    "maicare-site.png": {
+      "url": "https://maicares.org/",
+      "captured": "2026-11-19",
+      "viewport": "1440 × 820, 2x",
+      "note": "Public homepage, captured after its appointment example became visible."
+    }
+  }
 }

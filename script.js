@@ -60,6 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     quickBtns.forEach(btn => {
         btn.addEventListener('click', () => showPage(btn.dataset.panel));
     });
+
+    const initialPanel = new URLSearchParams(window.location.search).get('panel');
+    if ([...views].some(view => view.dataset.page === initialPanel)) showPage(initialPanel);
 });
 
 // Publication media sliders (e.g. HoT teaser images)

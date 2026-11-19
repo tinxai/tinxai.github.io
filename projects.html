@@ -20,71 +20,140 @@
         </nav>
 
         <header class="blog-header">
-            <h1 class="blog-page-title">Projects 🚀</h1>
-            <p class="blog-page-subtitle">Open-source tools, research code, and things I've built.</p>
+            <h1 class="blog-page-title">Selected projects</h1>
+            <p class="blog-page-subtitle">Side projects and small tools I’ve built.</p>
         </header>
 
-        <!-- Projects grid — rendered from data/projects.json -->
-        <div id="projects-grid" class="projects-grid"></div>
+        <div class="project-collection">
+<!-- PROJECTS:START -->
+<!-- Generated from data/projects.json by scripts/render_projects.py -->
+<section class="project-group project-group--software">
+<header class="project-group-heading"><h2>Software projects</h2><p>Larger projects, from the interface to the backend.</p></header>
+<div class="project-group-entries">
+<article class="project-entry" data-project="dealmesh">
+<figure class="project-teaser">
+<a href="assets/projects/dealmesh-groceries.png" target="_blank" rel="noopener" aria-label="View DealMesh teaser at full size">
+<img src="assets/projects/dealmesh-groceries.png" alt="DealMesh grocery-list interface with real rice, noodle, fish sauce, and coffee photos, alongside a simulated seller-bundle comparison" width="2880" height="1516" loading="lazy">
+</a>
+<figcaption>UI concept · Product photos from Weee <span aria-hidden="true">↗</span></figcaption>
+</figure>
+<div class="project-entry-body"><div class="project-entry-heading">
+<h3>DealMesh</h3>
+</div><p class="project-entry-description">Finding the cheapest item does not always make the cheapest shopping list. DealMesh compares products, sellers, shipping, and bundle discounts to choose a combination for the whole list.</p>
+<p class="project-entry-detail">The optimizer explains each choice and flags unknown shipping costs. Built-in demo marketplaces let the workflow run without marketplace credentials.</p>
+<div class="project-stack" aria-label="Technology stack">
+<span class="project-tag">Java</span>
+<span class="project-tag">Spring Boot</span>
+<span class="project-tag">React</span>
+<span class="project-tag">TypeScript</span>
+<span class="project-tag">Vite</span>
+<span class="project-tag">Tailwind CSS</span>
+<span class="project-tag">PostgreSQL</span>
+<span class="project-tag">Redis</span>
+</div>
+</div></article>
+<article class="project-entry" data-project="maicare">
+<figure class="project-teaser">
+<a href="assets/projects/maicare-site.png" target="_blank" rel="noopener" aria-label="View MaiCare teaser at full size">
+<img src="assets/projects/maicare-site.png" alt="MaiCare website showing an English and Vietnamese appointment conversation and confirmed clinic booking" width="2880" height="1640" loading="lazy">
+</a>
+<figcaption>Website screenshot · maicares.org <span aria-hidden="true">↗</span></figcaption>
+</figure>
+<div class="project-entry-body"><div class="project-entry-heading">
+<h3>MaiCare</h3>
+</div><p class="project-entry-description">An AI front desk for clinics, helping patients book, reschedule, or cancel visits in English and Vietnamese.</p>
+<p class="project-entry-detail">It offers available appointment times, asks for confirmation before booking, and hands unfinished requests to clinic staff with the conversation attached.</p>
+<div class="project-stack" aria-label="Technology stack">
+<span class="project-tag">Python</span>
+<span class="project-tag">FastAPI</span>
+<span class="project-tag">SQLite</span>
+<span class="project-tag">Qwen</span>
+<span class="project-tag">Tinker API</span>
+<span class="project-tag">pandas</span>
+</div>
+<div class="project-entry-links">
+<a href="https://maicares.org/" target="_blank" rel="noopener">Website<span class="project-link-arrow" aria-hidden="true">↗</span></a>
+<a href="https://github.com/tinxai/phongkham-ai" target="_blank" rel="noopener">Code<span class="project-link-arrow" aria-hidden="true">↗</span></a>
+</div>
+</div></article>
+</div></section>
+<section class="project-group project-group--tools">
+<header class="project-group-heading"><h2>Small tools &amp; experiments</h2><p>Focused utilities and ideas I wanted to try.</p></header>
+<div class="project-group-entries">
+<article class="project-entry project-entry--compact" data-project="pageguide-gemini">
+<figure class="project-teaser">
+<a href="assets/projects/pageguide-gemini.png" target="_blank" rel="noopener" aria-label="View PageGuide Gemini teaser at full size">
+<img src="assets/projects/pageguide-gemini.png" alt="PageGuide Gemini connecting a citation to highlighted evidence in a source page" width="1786" height="683" loading="lazy">
+</a>
+<figcaption>Screenshot <span aria-hidden="true">↗</span></figcaption>
+</figure>
+<div class="project-entry-body"><div class="project-entry-heading">
+<h3>PageGuide Gemini</h3>
+</div><p class="project-entry-description">A Chrome extension that jumps from Gemini citations to the source tab and highlights the quoted text or image region.</p>
+<div class="project-stack" aria-label="Technology stack">
+<span class="project-tag">JavaScript</span>
+<span class="project-tag">Chrome Extensions</span>
+<span class="project-tag">Gemini</span>
+<span class="project-tag">HTML / CSS</span>
+</div>
+<div class="project-entry-links">
+<a href="https://github.com/tinxai/pageguide-gemini" target="_blank" rel="noopener">Code<span class="project-link-arrow" aria-hidden="true">↗</span></a>
+</div>
+</div></article>
+<article class="project-entry project-entry--compact" data-project="skitch2">
+<figure class="project-teaser">
+<a href="assets/projects/skitch2.png" target="_blank" rel="noopener" aria-label="View Skitch Studio teaser at full size">
+<img src="assets/projects/skitch2.png" alt="Skitch Studio screenshot with annotation tools, arrows, and editable text" width="1436" height="690" loading="lazy">
+</a>
+<figcaption>Screenshot <span aria-hidden="true">↗</span></figcaption>
+</figure>
+<div class="project-entry-body"><div class="project-entry-heading">
+<h3>Skitch Studio</h3>
+</div><p class="project-entry-description">A browser tool for marking up screenshots with arrows, text, and privacy patches, then exporting a PNG.</p>
+<div class="project-stack" aria-label="Technology stack">
+<span class="project-tag">JavaScript</span>
+<span class="project-tag">Canvas</span>
+<span class="project-tag">HTML / CSS</span>
+</div>
+<div class="project-entry-links">
+<a href="https://skitch-studio.tin-kevin.chatgpt.site" target="_blank" rel="noopener">Website<span class="project-link-arrow" aria-hidden="true">↗</span></a>
+<a href="https://github.com/tinxai/skitch2" target="_blank" rel="noopener">Code<span class="project-link-arrow" aria-hidden="true">↗</span></a>
+</div>
+</div></article>
+<article class="project-entry project-entry--compact" data-project="shotcard">
+<figure class="project-teaser">
+<a href="assets/projects/shotcard.svg" target="_blank" rel="noopener" aria-label="View Shotcard teaser at full size">
+<img src="assets/projects/shotcard.svg" alt="Shotcard screenshot-to-flashcard workflow illustration" width="1280" height="420" loading="lazy">
+</a>
+<figcaption>Workflow illustration <span aria-hidden="true">↗</span></figcaption>
+</figure>
+<div class="project-entry-body"><div class="project-entry-heading">
+<h3>Shotcard</h3>
+</div><p class="project-entry-description">A macOS shortcut that turns screenshots of Japanese text into explanations and Anki cards, with furigana and audio.</p>
+<div class="project-stack" aria-label="Technology stack">
+<span class="project-tag">Python</span>
+<span class="project-tag">Lua</span>
+<span class="project-tag">Hammerspoon</span>
+<span class="project-tag">OpenRouter</span>
+<span class="project-tag">AnkiConnect</span>
+<span class="project-tag">HTML / CSS</span>
+</div>
+<div class="project-entry-links">
+<a href="https://github.com/tinxai/shotcard" target="_blank" rel="noopener">Code<span class="project-link-arrow" aria-hidden="true">↗</span></a>
+</div>
+</div></article>
+</div></section>
+<!-- PROJECTS:END -->
+</div>
+        <aside class="projects-resources">
+            <h2>Notes &amp; resources</h2>
+            <p>My collection of <a href="index.html?panel=resources">statistics references and other learning materials</a> lives in Resources.</p>
+        </aside>
 
     </div>
 
     <script src="project-icons.js"></script>
     <script src="script.js"></script>
-    <script>
-        const linkIcons = {
-            github: '<i class="fab fa-github"></i>',
-            website: '<i class="fas fa-globe"></i>',
-            paper: '<i class="fas fa-file-alt"></i>',
-            demo: '<i class="fas fa-play-circle"></i>',
-            video: '<i class="fab fa-youtube"></i>',
-            slides: '<i class="fas fa-presentation"></i>'
-        };
-
-        const linkLabels = {
-            github: 'Code',
-            website: 'Website',
-            paper: 'Paper',
-            demo: 'Demo',
-            video: 'Video',
-            slides: 'Slides'
-        };
-
-        fetch('data/projects.json')
-            .then(res => res.json())
-            .then(projects => {
-                const grid = document.getElementById('projects-grid');
-                grid.innerHTML = projects.map(p => {
-                    const tags = p.tags.map(t => `<span class="project-tag">${t}</span>`).join('');
-                    const stack = (p.techStack || []).map(t => `<span class="project-tag">${t}</span>`).join('');
-                    const links = Object.entries(p.links || {}).map(([type, url]) =>
-                        `<a href="${url}" class="project-link" target="_blank" rel="noopener">
-                            ${linkIcons[type] || '<i class="fas fa-link"></i>'}
-                            ${linkLabels[type] || type}
-                        </a>`
-                    ).join('');
-                    const materials = (p.materials || []).map(m =>
-                        `<a href="${m.url}" class="project-link" target="_blank" rel="noopener">
-                            <i class="fas fa-book"></i>
-                            ${m.label}
-                        </a>`
-                    ).join('');
-                    return `
-                        <div class="project-card">
-                            ${p.banner ? `<img class="project-banner" src="${p.banner}" alt="${p.bannerAlt || p.title}" loading="lazy">` : p.icon ? `<div class="project-icon" aria-hidden="true">${p.icon}</div>` : ''}
-                            <div class="project-content">
-                                <h2 class="project-title">${p.title}</h2>
-                                <p class="project-desc">${p.description}</p>
-                                <div class="project-tags">${tags}</div>
-                                ${stack ? `<p class="project-stack-label">Tech stack</p><div class="project-tags">${stack}</div>` : ''}
-                                <div class="project-links">${links}${materials}</div>
-                            </div>
-                        </div>`;
-                }).join('');
-                addProjectStackIcons(grid);
-            })
-            .catch(err => console.error('Failed to load projects:', err));
-    </script>
-</body>
+  </body>
 
 </html>

@@ -1,0 +1,39 @@
+{
+  "reference": "https://www.weee.com/en",
+  "retrieved": "2026-11-19",
+  "note": "Product photos from Weee, used in a portfolio UI concept. Prices in the figure are illustrative, not live offers. Seller groups and savings are a DealMesh demo, not Weee offers or integration.",
+  "products": [
+    {
+      "id": 2071,
+      "name": "Sincere Orient Bánh Phở Tươi Fresh Rice Stick Noodles 16 oz",
+      "view_link": "https://www.weee.com/en/product/Sincere-Orient-B--nh-Ph----T----i-Fresh-Rice-Stick-Noodles/2071",
+      "img": "https://img06.weeecdn.com/product/image/118/920/27A4DE539221662B.png",
+      "price": 1.69,
+      "localImage": "2071.png"
+    },
+    {
+      "id": 91701,
+      "name": "Chinsu Fish Sauce 16.9 oz",
+      "view_link": "https://www.weee.com/en/product/Chinsu-Fish-Sauce/91701",
+      "img": "https://img06.weeecdn.com/product/image/699/787/40CEC711C816D59A.png",
+      "price": 3.99,
+      "localImage": "91701.png"
+    },
+    {
+      "id": 87024,
+      "name": "ST-25 Vietnam Fragrant Rice 10 lb",
+      "view_link": "https://www.weee.com/en/product/ST-25-Vietnam-Fragrant-Rice/87024",
+      "img": "https://img06.weeecdn.com/product/image/228/091/E9E4E28689CDEFE.png",
+      "price": 11.49,
+      "localImage": "87024.png"
+    },
+    {
+      "id": 108535,
+      "name": "Ong Bau Instant Salted Coffee Box 0.77 oz*10 pack",
+      "view_link": "https://www.weee.com/en/product/Ong-Bau-Instant-Salted-Coffee-Box/108535",
+      "img": "https://img06.weeecdn.com/product/image/713/886/1B7D0F8DF8CB9CB9.png",
+      "price": 4.29,
+      "localImage": "108535.png"
+    }
+  ]
+}

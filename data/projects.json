@@ -1,143 +1,121 @@
 [
-    {
-        "slug": "pageguide-gemini",
-        "title": "PageGuide Gemini",
-        "description": "A Chrome extension that connects Gemini citations to evidence on the page. Jump to an existing source tab, highlight quoted text, or draw labeled boxes over images and charts.",
-        "tags": [
-            "Browser Extension",
-            "AI"
-        ],
-        "techStack": [
-            "JavaScript",
-            "Chrome Extensions",
-            "Gemini",
-            "HTML / CSS"
-        ],
-        "links": {
-            "github": "https://github.com/tinxai/pageguide-gemini"
-        },
-        "banner": "assets/projects/pageguide-gemini.png",
-        "bannerAlt": "PageGuide Gemini highlighting cited evidence alongside a Gemini answer"
-    },
-    {
-        "slug": "phongkham-ai",
-        "title": "PhongKham AI",
-        "icon": "🏥",
-        "description": "A Vietnamese clinic assistant for booking and canceling appointments, answering clinic FAQs, and exploring synthetic clinic data with a pandas-based analytics agent.",
-        "tags": [
-            "Clinic Assistant",
-            "AI"
-        ],
-        "techStack": [
-            "Python",
-            "FastAPI",
-            "SQLite",
-            "Qwen",
-            "Tinker API",
-            "pandas"
-        ],
-        "links": {
-            "github": "https://github.com/tinxai/phongkham-ai"
-        },
-        "banner": "assets/projects/phongkham-ai.webp",
-        "bannerAlt": "Clinic booking, medical chat, and appointment calendar illustration"
-    },
-    {
-        "slug": "dealmesh",
-        "title": "DealMesh",
-        "icon": "🛒",
-        "description": "A shopping-list optimizer that compares combinations of products, sellers, shipping costs, and bundle discounts across marketplaces, with an explanation for each choice.",
-        "tags": [
-            "E-commerce",
-            "Optimization"
-        ],
-        "techStack": [
-            "Java",
-            "Spring Boot",
-            "React",
-            "TypeScript",
-            "Vite",
-            "Tailwind CSS",
-            "PostgreSQL",
-            "Redis"
-        ],
-        "links": {},
-        "banner": "assets/projects/dealmesh-v2.webp",
-        "bannerAlt": "DealMesh ecommerce concept with product cards and an optimizer comparing seller bundles, shipping costs, and savings"
-    },
-    {
-        "slug": "shotcard",
-        "title": "Shotcard",
-        "icon": "📸",
-        "description": "A macOS tool that turns screenshots of Japanese text or images into level-aware explanations and Anki flashcards, with furigana, audio, and optional Obsidian notes.",
-        "tags": [
-            "Language Learning",
-            "Desktop Tool"
-        ],
-        "techStack": [
-            "Python",
-            "Lua",
-            "Hammerspoon",
-            "OpenRouter",
-            "AnkiConnect",
-            "HTML / CSS"
-        ],
-        "links": {
-            "github": "https://github.com/tinxai/shotcard"
-        },
-        "banner": "assets/projects/shotcard.svg",
-        "bannerAlt": "Shotcard screenshot-to-Anki workflow banner"
-    },
-    {
-        "slug": "hot",
-        "title": "HoT: Highlighted Chain of Thought",
-        "description": "A method for referencing supporting facts from inputs by highlighting evidence directly in the source text.",
-        "tags": [
-            "Python",
-            "NLP",
-            "Explainability"
-        ],
-        "links": {
-            "github": "https://github.com/anguyen8/hot",
-            "website": "https://highlightedchainofthought.github.io/",
-            "paper": "https://arxiv.org/pdf/2503.02003v4"
-        }
-    },
-    {
-        "slug": "argue.ai",
-        "title": "Argue.ai: Mutli-LLM Debate",
-        "description": "Let 2 LLMs talk to each other to brainstorm and generate better solutions.",
-        "tags": [
-            "Multi-Agent",
-            "LLM"
-        ],
-        "links": {
-            "github": "https://github.com/tin-xai/Argue.ai"
-        }
-    },
-    {
-        "slug": "hci-stats",
-        "title": "Statistics in HCI",
-        "description": "A collection of references and notes on the statistical methods commonly used in HCI research.",
-        "tags": [
-            "Statistics",
-            "HCI",
-            "Research"
-        ],
-        "links": {},
-        "materials": [
-            {
-                "label": "Yatani: Statistical Methods in HCI",
-                "url": "https://yatani.jp/teaching/doku.php?id=hcistats:start"
-            },
-            {
-                "label": "How to Report an F-Statistic",
-                "url": "https://www.yorku.ca/mack/RN-HowToReportAnFStatistic.html"
-            },
-            {
-                "label": "Penn State STAT 502: Analysis of Variance and Design of Experiments",
-                "url": "https://online.stat.psu.edu/stat502/"
-            }
-        ]
+  {
+    "slug": "dealmesh",
+    "title": "DealMesh",
+    "description": "Finding the cheapest item does not always make the cheapest shopping list. DealMesh compares products, sellers, shipping, and bundle discounts to choose a combination for the whole list.",
+    "techStack": [
+      "Java",
+      "Spring Boot",
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Redis"
+    ],
+    "links": {},
+    "group": "software",
+    "detail": "The optimizer explains each choice and flags unknown shipping costs. Built-in demo marketplaces let the workflow run without marketplace credentials.",
+    "teaser": {
+      "src": "assets/projects/dealmesh-groceries.png",
+      "alt": "DealMesh grocery-list interface with real rice, noodle, fish sauce, and coffee photos, alongside a simulated seller-bundle comparison",
+      "caption": "UI concept · Product photos from Weee",
+      "width": 2880,
+      "height": 1516
     }
+  },
+  {
+    "slug": "maicare",
+    "title": "MaiCare",
+    "description": "An AI front desk for clinics, helping patients book, reschedule, or cancel visits in English and Vietnamese.",
+    "techStack": [
+      "Python",
+      "FastAPI",
+      "SQLite",
+      "Qwen",
+      "Tinker API",
+      "pandas"
+    ],
+    "links": {
+      "website": "https://maicares.org/",
+      "github": "https://github.com/tinxai/phongkham-ai"
+    },
+    "group": "software",
+    "detail": "It offers available appointment times, asks for confirmation before booking, and hands unfinished requests to clinic staff with the conversation attached.",
+    "teaser": {
+      "src": "assets/projects/maicare-site.png",
+      "alt": "MaiCare website showing an English and Vietnamese appointment conversation and confirmed clinic booking",
+      "caption": "Website screenshot · maicares.org",
+      "width": 2880,
+      "height": 1640
+    }
+  },
+  {
+    "slug": "pageguide-gemini",
+    "title": "PageGuide Gemini",
+    "description": "A Chrome extension that jumps from Gemini citations to the source tab and highlights the quoted text or image region.",
+    "techStack": [
+      "JavaScript",
+      "Chrome Extensions",
+      "Gemini",
+      "HTML / CSS"
+    ],
+    "links": {
+      "github": "https://github.com/tinxai/pageguide-gemini"
+    },
+    "group": "tools",
+    "teaser": {
+      "src": "assets/projects/pageguide-gemini.png",
+      "alt": "PageGuide Gemini connecting a citation to highlighted evidence in a source page",
+      "caption": "Screenshot",
+      "width": 1786,
+      "height": 683
+    }
+  },
+  {
+    "slug": "skitch2",
+    "title": "Skitch Studio",
+    "description": "A browser tool for marking up screenshots with arrows, text, and privacy patches, then exporting a PNG.",
+    "techStack": [
+      "JavaScript",
+      "Canvas",
+      "HTML / CSS"
+    ],
+    "links": {
+      "website": "https://skitch-studio.tin-kevin.chatgpt.site",
+      "github": "https://github.com/tinxai/skitch2"
+    },
+    "group": "tools",
+    "teaser": {
+      "src": "assets/projects/skitch2.png",
+      "alt": "Skitch Studio screenshot with annotation tools, arrows, and editable text",
+      "caption": "Screenshot",
+      "width": 1436,
+      "height": 690
+    }
+  },
+  {
+    "slug": "shotcard",
+    "title": "Shotcard",
+    "description": "A macOS shortcut that turns screenshots of Japanese text into explanations and Anki cards, with furigana and audio.",
+    "techStack": [
+      "Python",
+      "Lua",
+      "Hammerspoon",
+      "OpenRouter",
+      "AnkiConnect",
+      "HTML / CSS"
+    ],
+    "links": {
+      "github": "https://github.com/tinxai/shotcard"
+    },
+    "group": "tools",
+    "teaser": {
+      "src": "assets/projects/shotcard.svg",
+      "alt": "Shotcard screenshot-to-flashcard workflow illustration",
+      "caption": "Workflow illustration",
+      "width": 1280,
+      "height": 420
+    }
+  }
 ]
